@@ -1,0 +1,151 @@
+# ==============================================================================
+# TopoSAM-Flow: Citation File Format (CFF)
+# ==============================================================================
+# This file provides citation information for the TopoSAM-Flow software.
+# For more information, see: https://citation-file-format.github.io/
+# ==============================================================================
+
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
+# ------------------------------------------------------------------------------
+# Title & Description
+# ------------------------------------------------------------------------------
+title: "TopoSAM-Flow"
+subtitle: "Weakly-Supervised Industrial Image Segmentation via Differentiable Variational Flow and Topological Priors"
+abstract: |
+  TopoSAM-Flow is a deep learning framework for weakly-supervised industrial 
+  image segmentation. It combines the Segment Anything Model (SAM) for 
+  pseudo-mask generation, differentiable variational regularization inspired 
+  by active contour models, and topological constraints via persistent homology. 
+  The method achieves high segmentation accuracy with only bounding-box 
+  annotations, reducing annotation costs by 91% compared to pixel-level supervision.
+
+# ------------------------------------------------------------------------------
+# Authors
+# ------------------------------------------------------------------------------
+authors:
+  - family-names: "Houari"
+    given-names: "Kamel"
+    name-particle: ""
+    name-suffix: ""
+    email: "kamel.houari@univ-constantine2.dz"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Laboratory MISC, University of Constantine 2, Algeria"
+    address: "Constantine, Algeria"
+    
+  - family-names: "Chikhi"
+    given-names: "Salim"
+    name-particle: ""
+    name-suffix: ""
+    email: "salim.chikhi@univ-constantine2.dz"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "Computer Science Department, University of Constantine 2, Algeria"
+    address: "Constantine, Algeria"
+
+# ------------------------------------------------------------------------------
+# Version & Release
+# ------------------------------------------------------------------------------
+version: 1.0.0
+date-released: 2026-03-11
+status: "published"
+
+# ------------------------------------------------------------------------------
+# Identifiers
+# ------------------------------------------------------------------------------
+doi: "10.xxxx/xxxxx"  # À mettre à jour après publication (Zenodo, etc.)
+url: "https://github.com/kamel-houari/TopoSAM-Flow"
+repository-code: "https://github.com/kamel-houari/TopoSAM-Flow"
+repository: "https://github.com/kamel-houari/TopoSAM-Flow"
+
+# ------------------------------------------------------------------------------
+# License
+# ------------------------------------------------------------------------------
+license: MIT
+license-url: "https://opensource.org/licenses/MIT"
+
+# ------------------------------------------------------------------------------
+# Keywords & Topics
+# ------------------------------------------------------------------------------
+keywords:
+  - "image segmentation"
+  - "deep learning"
+  - "weakly-supervised learning"
+  - "active contour models"
+  - "topological data analysis"
+  - "industrial inspection"
+  - "defect detection"
+  - "Segment Anything Model"
+  - "persistent homology"
+  - "computer vision"
+
+# ------------------------------------------------------------------------------
+# Publication Details
+# ------------------------------------------------------------------------------
+type: software
+publication-date: 2026-03-11
+
+# ------------------------------------------------------------------------------
+# Related Publications
+# ------------------------------------------------------------------------------
+references:
+  - type: article
+    title: "TopoSAM-Flow: Weakly-Supervised Industrial Image Segmentation via Differentiable Variational Flow and Topological Priors"
+    authors:
+      - family-names: "Houari"
+        given-names: "Kamel"
+      - family-names: "Chikhi"
+        given-names: "Salim"
+    journal: "IEEE Transactions on Industrial Informatics"  # Ou autre revue cible
+    year: 2026
+    doi: "10.xxxx/xxxxx"  # À mettre à jour après publication
+
+# ------------------------------------------------------------------------------
+# Contributing
+# ------------------------------------------------------------------------------
+contact:
+  - name: "Kamel Houari"
+    email: "kamel.houari@univ-constantine2.dz"
+
+# ------------------------------------------------------------------------------
+# Acknowledgements
+# ------------------------------------------------------------------------------
+acknowledgements: |
+  This work was supported by the Algerian General Directorate of Scientific 
+  Research and Technological Development (DGRSDT) under PRFU Research Project 
+  No. C00L07UN250120230001, and by the Laboratory MISC, University of Constantine 2.
+
+# ------------------------------------------------------------------------------
+# How to Cite (BibTeX)
+# ------------------------------------------------------------------------------
+preferred-citation:
+  type: article
+  title: "TopoSAM-Flow: Weakly-Supervised Industrial Image Segmentation via Differentiable Variational Flow and Topological Priors"
+  authors:
+    - family-names: "Houari"
+      given-names: "Kamel"
+    - family-names: "Chikhi"
+      given-names: "Salim"
+  journal: "IEEE Transactions on Industrial Informatics"
+  year: 2026
+  volume: "xx"
+  issue: "xx"
+  pages: "xx-xx"
+  doi: "10.xxxx/xxxxx"
+
+# ------------------------------------------------------------------------------
+# BibTeX Entry (for reference)
+# ------------------------------------------------------------------------------
+# @article{houari2026toposamflow,
+#   title={TopoSAM-Flow: Weakly-Supervised Industrial Image Segmentation via 
+#          Differentiable Variational Flow and Topological Priors},
+#   author={Houari, Kamel and Chikhi, Salim},
+#   journal={IEEE Transactions on Industrial Informatics},
+#   year={2026},
+#   volume={xx},
+#   number={xx},
+#   pages={xx--xx},
+#   doi={10.xxxx/xxxxx},
+#   url={https://github.com/kamel-houari/TopoSAM-Flow}
+# }
+# ==============================================================================

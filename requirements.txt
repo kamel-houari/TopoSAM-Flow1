@@ -1,0 +1,15 @@
+# 1. Créer un environnement virtuel
+python -m venv venv
+
+# 2. Activer l'environnement
+# Sur Windows :
+venv\Scripts\activate
+# Sur Linux/Mac :
+source venv/bin/activate
+
+# 3. Installer les dépendances
+pip install -r requirements.txt
+
+# 4. Vérifier l'installation
+pip list
+python -c "import torch; print(f'PyTorch {torch.__version__}')"

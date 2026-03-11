@@ -1,0 +1,26 @@
+# NEU Surface Defect Dataset Configuration
+# =========================================
+
+defaults:
+  - default
+
+data:
+  root: ./data/NEU
+  train_split: 0.8
+  classes:
+    - rolling_in
+    - patches
+    - crazing
+    - pitted_surface
+    - inclusion
+    - scratches
+  annotation_type: bounding_box  # weak supervision
+
+training:
+  epochs: 100
+  batch_size: 16
+  early_stopping: true
+  patience: 10
+
+evaluation:
+  metrics: [mIoU, F1, ConnectivityError]

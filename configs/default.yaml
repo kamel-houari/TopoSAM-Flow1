@@ -1,0 +1,47 @@
+# TopoSAM-Flow: Default Configuration
+# ====================================
+
+# Model
+model:
+  backbone: mobilenetv3_attention
+  num_classes: 1
+  epsilon: 1.0          # SRH parameter
+  alpha: 0.1            # SRH regularization
+  lambda_var: 0.5       # Variational loss weight
+  lambda_topo: 0.3      # Topological loss weight
+
+# Training
+training:
+  epochs: 100
+  batch_size: 16
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-4
+  optimizer: adam
+  scheduler: cosine
+  warmup_epochs: 5
+
+# Data
+data:
+  image_size: [512, 512]
+  augmentation:
+    random_flip: true
+    random_rotation: 15    # degrees
+    brightness: 0.2        # +/- 20%
+    contrast: 0.2
+
+# Evaluation
+evaluation:
+  metrics: [mIoU, BF1, ConnectivityError]
+  bf1_threshold: 2         # pixels for boundary tolerance
+
+# Logging
+logging:
+  log_interval: 10
+  save_interval: 10
+  tensorboard: true
+
+# Hardware
+hardware:
+  device: cuda
+  num_workers: 4
+  mixed_precision: true

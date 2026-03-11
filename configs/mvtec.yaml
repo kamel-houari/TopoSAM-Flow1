@@ -1,0 +1,35 @@
+# MVTec AD Anomaly Detection Configuration
+# =========================================
+
+defaults:
+  - default
+
+
+  root: ./data/MVTec_AD
+  categories:  # Train on all 15 categories
+    - carpet
+    - grid
+    - leather
+    - tile
+    - wood
+    - bottle
+    - cable
+    - capsule
+    - hazelnut
+    - metal_nut
+    - pill
+    - screw
+    - toothbrush
+    - transistor
+    - zipper
+  annotation_type: pixel
+
+training:
+  epochs: 150
+  batch_size: 8
+  # Reduce topo weight for texture categories
+  lambda_topo: 0.2
+
+evaluation:
+  metrics: [mIoU, PixelAUROC, ProAUROC]
+  # Evaluate per-category and report mean
